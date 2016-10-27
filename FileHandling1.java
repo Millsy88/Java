@@ -57,8 +57,20 @@ public class FileHandling1 {
             JOptionPane.showMessageDialog(null,word + " not found");// not found
         }*/
         
-        System.out.println("There are " + chars.size() + " words with 4 characters. They are: \n" + chars);// found
-        System.out.println("There are " + duplicates.size() + " duplicates. They are: \n" + duplicates);
+        String duplicatesFormated = duplicates.toString()
+            .replace(",", "")  //remove the commas
+            .replace("[", "")  //remove the right bracket
+            .replace("]", "");  //remove the left bracket
+            
+        
+        String charsFormated = chars.toString()
+            .replace(",", "")  //remove the commas
+            .replace("[", "")  //remove the right bracket
+            .replace("]", "");  //remove the left bracket
+            
+        
+        System.out.println("There are " + chars.size() + " words with 4 characters. They are: \n" + charsFormated);// found
+        System.out.println("There are " + duplicates.size() + " duplicates. They are: \n" + duplicatesFormated);
 
     }
 }
