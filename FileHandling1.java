@@ -50,23 +50,17 @@ public class FileHandling1 {
             }
                 
         }
-
-        /*if(wordFound){
-            JOptionPane.showMessageDialog(null, "The word " + word + " was found " + count + " times ");// found
-        }else{
-            JOptionPane.showMessageDialog(null,word + " not found");// not found
-        }*/
         
         String duplicatesFormated = duplicates.toString()
-            .replace(",", "")  //remove the commas
-            .replace("[", "")  //remove the right bracket
-            .replace("]", "");  //remove the left bracket
+            .replace(",", "")  
+            .replace("[", "")  
+            .replace("]", "");  
             
         
         String charsFormated = chars.toString()
-            .replace(",", "")  //remove the commas
-            .replace("[", "")  //remove the right bracket
-            .replace("]", "");  //remove the left bracket
+            .replace(",", "")  
+            .replace("[", "")  
+            .replace("]", "");  
             
         
         System.out.println("There are " + chars.size() + " words with 4 characters. They are: \n" + charsFormated);// found
